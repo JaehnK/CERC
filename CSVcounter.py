@@ -1,16 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[34]:
-
-
 import os
 import csv
 import datetime
-
-
-# In[76]:
-
 
 class CSVcounter:
     """
@@ -63,9 +53,6 @@ class CSVcounter:
             csvwriter.writerow(['FileName', 'Count', 'CreatedTime'])
             for name, cnt, ctimes in zip(self.csv_names, self.row_counts, self.create_times):
                 csvwriter.writerow([name, cnt, ctimes])
-
-
-# In[69]:
 
 
 folder_path = 'FOLDER_PATH'
