@@ -33,7 +33,7 @@ class GoogleCSEsearch:
         df = pd.DataFrame(data = {'title' : titles,
                     'snippet' : snippets,
                     'FormattedUrl' : furls})
-        return df;
+        return df
     
     def to_csv(self, folder_path = './', file_name = query):
         df.to_csv(os.path.join(folder_path, file_name), encoding = 'utf-8-sig')
